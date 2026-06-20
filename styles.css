@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+.debug--hidden {
+  visibility: hidden;
+}
+
+img {
+  display: block;
+  /* height: 100%; */
+}
+
+.flow > * + * {
+  margin-top: 1em;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  font-family: sans-serif;
+
+  background-color: ghostwhite;
+}
+
+.mockup {
+  position: relative;
+  /* background-repeat: no-repeat; */
+}
+
+.mockup::before {
+  content: '';  /* Initialize the pseudo-element with the content property. */
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* The mockup image */
+  background-image: url(sign-up-form.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+.container--body {
+  max-width: min(1920px, 100%);
+  display: flex;
+}
+
+/* 
+
+.header {
+}
+
+ */
+
+.header--page {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  max-width: min(42rem, 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header--page::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(header-background.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.banner {
+  position: absolute;
+  top: calc(50% - 5rem);
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.banner::before {
+  content: ''; /* Initialize the pseudo-element with the content property. */
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: black;
+  opacity: 0.5;
+} 
+
+.logo {
+  position: relative;
+  max-width: 10rem;
+  height: 100%;
+}
+
+.logo-image {
+  padding-block: 1em;
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.lettermark {
+  position: relative;
+  color: white;
+  align-self: center;
+  font-size: 4rem;
+}
+
+.image-credit {
+  text-align: center;
+  margin-block: 2em;
+  position: relative;
+  color: white;
+}
+
+.links--image-credit:visited {
+  color:azure
+}
+
+
+
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.container--main {
+  padding-inline: 4rem;
+}
+
+.header--main {
+  font-size: 1.5rem;
+}
+
+.form {
+  position: relative;
+  background-color: white;
+  padding: 4rem 0;
+  box-shadow: 00 0.5em 0.5em rgb(0 0 0 / 0.3);
+}
+
+.button--submit {
+  max-width: 6rem;
+}
+
+input {
+  display: block;
+}
