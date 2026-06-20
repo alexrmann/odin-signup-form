@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url(assets/Norsebold.otf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -131,10 +136,11 @@ body {
 }
 
 .lettermark {
+  font-family: 'Norse Bold';
   position: relative;
   color: white;
   align-self: center;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .image-credit {
