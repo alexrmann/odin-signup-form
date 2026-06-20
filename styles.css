@@ -90,6 +90,10 @@ body {
   background-size: cover;
 }
 
+.header--page a:visited {
+  color: aliceblue;
+}
+
 .banner {
   position: absolute;
   top: calc(50% - 5rem);
