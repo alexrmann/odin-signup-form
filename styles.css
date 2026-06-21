@@ -185,6 +185,10 @@ body {
 
 }
 
+.main__container {
+  position: relative;
+}
+
 .container--main {
   padding-inline: 4rem;
 }
