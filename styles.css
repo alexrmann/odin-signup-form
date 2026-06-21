@@ -267,3 +267,16 @@ body {
   font-weight: bold;
   color: var(--color__sage);
 }
+
+.form__input[type='text']:user-invalid,
+.form__input[type='email']:user-invalid,
+.form__input[type='tel']:user-invalid,
+.form__input[type='password']:user-invalid {
+  border: 2px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+
+.form__input:focus {
+  box-shadow: 0.25em 0.25em 0.5em rgb(0 0 0 / 0.25);
+}
