@@ -3,6 +3,14 @@
   src: url(assets/Norsebold.otf);
 }
 
+:root {
+  --color__sage: #596D48;
+  --color__input-border: #AAAAAA;
+  --color__input-label: #1F1F1F;
+
+  --font-stack__primary: 'Source Sans Pro', 'Segoe UI', sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
 
-  font-family: sans-serif;
+  font-family: var(--font-stack__primary);
 
   background-color: ghostwhite;
 }
@@ -75,6 +83,7 @@ body {
   overflow: hidden;
   width: 50%;
   max-width: min(42rem, 100%);
+  min-width: 24rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -146,6 +155,7 @@ body {
 .image-credit {
   text-align: center;
   margin-block: 2em;
+  margin-inline: 2em;
   position: relative;
   color: white;
 }
@@ -179,21 +189,77 @@ body {
   padding-inline: 4rem;
 }
 
-.header--main {
+.header--main,
+.form__heading {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .form {
   position: relative;
   background-color: white;
-  padding: 4rem 0;
-  box-shadow: 00 0.5em 0.5em rgb(0 0 0 / 0.3);
+  margin-top: 2rem;
+  padding: 1rem 0 2rem 0;
+  box-shadow: 0 0.25em 0.5em rgb(0 0 0 / 0.25);
+}
+
+.form__container--form-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  max-width: 32rem;
+}
+
+
+
+.form__group {
+
+}
+
+.form__label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  color: var(--color__input-label);
+}
+
+.form__input {
+  display: block;
+  max-width: 12rem;
+  width: 100%;
+  min-height: 1.5rem;
+  margin-top: 0.125rem;
+
+  padding-inline: 0.5rem;
+
+  border-radius: 0.25em;
+  border: 1px solid var(--color__input-border);
 }
 
 .button--submit {
-  max-width: 6rem;
+  margin-top: 1rem;
+  max-width: 12rem;
+  width: 100%;
+  padding: 0.875em;
+  background-color: var(--color__sage);
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0.25em 0.25em 0.5em rgb(0 0 0 / 0.25);
+
+  border: none;
+  border-radius: 0.5em;
+
+  cursor: pointer;
 }
 
-input {
-  display: block;
+.footer--main {
+  margin-top: 2rem;
+}
+
+.link--login {
+  font-weight: bold;
+  color: var(--color__sage);
 }

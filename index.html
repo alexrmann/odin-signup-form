@@ -30,36 +30,57 @@
       <main class="main flow">
         <header class="header header--main flow">
           <div class="container container--main flow">
+            <p>This is not a real online-service!</p>
             <p>
-              This is not a real online-service! You know you need something
-              like this in your life to help you realize your deepest dreams.
-              Sign up
-              <em>now</em> to get started.
+              You know you need something like this in your life to help
+              you realize your deepest dreams. Sign up <em>now</em> to get
+              started.
             </p>
             <p>You <em>know</em> you want to.</p>
           </div>
         </header>
 
         <form id="myform" class="form flow" action="#" method="post">
-          <div class="container container--main flow">
-            <header>Let's do this!</header>
-            <div class="container--form flow">
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
+          <div class="container container--main form__container flow">
+            <header class="form__heading">Let's do this!</header>
+            <div class="form__container--form-inner">
+              <div class="form__group">
+                <label class="form__label" for="">First Name</label>
+                <input class="form__input" type="text" />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="">Last Name</label>
+                <input class="form__input" type="text" />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="">Email</label>
+                <input class="form__input" type="text" />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="">Phone Number</label>
+                <input class="form__input" type="text" />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="">Password</label>
+                <input class="form__input" type="text" />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="">Confirm Password</label>
+                <input class="form__input" type="text" />
+              </div>
             </div>
           </div>
         </form>
 
         <div class="container container--main">
           <button type="submit" form="myform" class="button button--submit">
-            <div class="button-content">Submit</div>
+            <div class="button-content">Create Account</div>
           </button>
         </div>
 
-        <footer>
+        <footer class="footer footer--main">
           <div class="container container--main flow">
-            Already have an account? <a href="#">Log in</a>
+            Already have an account? <a class="link link--login" href="#">Log in</a>
           </div>
         </footer>
       </main>
